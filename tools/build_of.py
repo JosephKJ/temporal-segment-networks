@@ -45,6 +45,7 @@ def run_optical_flow(vid_item, dev_id=0):
 
     current = current_process()
     dev_id = (int(current._identity[0]) - 1) % NUM_GPU
+    print dev_id
     image_path = '{}/img'.format(out_full_path)
     flow_x_path = '{}/flow_x'.format(out_full_path)
     flow_y_path = '{}/flow_y'.format(out_full_path)
